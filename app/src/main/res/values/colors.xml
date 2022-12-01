@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_GTCS_backgroundColor">#0C0C0D</color>
+    <color name="dark_GTCS_foregroundColor">#FFFFFF</color>
+
+    <color name="light_GTCS_backgroundColor">#F2F2F7</color>
+    <color name="light_GTCS_foregroundColor">#000000</color>
+</resources>

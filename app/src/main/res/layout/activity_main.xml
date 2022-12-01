@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?GTCS_backgroundColor"
+    android:fitsSystemWindows="false"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/heroLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_grad_drawable"
+        android:fitsSystemWindows="false"
+        android:orientation="vertical"
+        android:paddingBottom="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/inter_bold"
+            android:letterSpacing="-0.05"
+            android:text="GT Color Science"
+            android:textAlignment="center"
+            android:textColor="?GTCS_foregroundColor"
+            android:textSize="32sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="296dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="56dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="?GTCS_foregroundColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+            </FrameLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:letterSpacing="-0.05"
+                android:layout_marginEnd="8dp"
+                android:text="Dominant Color"
+                android:textAlignment="center"
+                android:textColor="?GTCS_foregroundColor"
+                android:textSize="16sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pickedImageColor"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:cardBackgroundColor="?GTCS_backgroundColor"
+                app:cardCornerRadius="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="64dp"
+        android:paddingEnd="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heroLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/bgTextSample"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="8dp"
+                    app:cardBackgroundColor="?GTCS_backgroundColor"
+                    app:cardCornerRadius="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_medium"
+                    android:letterSpacing="-0.05"
+                    android:text="Accent Dark"
+                    android:textAlignment="center"
+                    android:textColor="?GTCS_foregroundColor"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_medium"
+                    android:letterSpacing="-0.05"
+                    android:text="Accent Light"
+                    android:textAlignment="center"
+                    android:textColor="?GTCS_foregroundColor"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/fgTextSample"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    app:cardBackgroundColor="?GTCS_foregroundColor"
+                    app:cardCornerRadius="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sampleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/inter_medium"
+                android:letterSpacing="-0.05"
+                android:text="Accent text sample"
+                android:textAlignment="center"
+                android:textColor="?GTCS_foregroundColor"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pickButton"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/inter_medium"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:letterSpacing="-0.05"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Pick a photo"
+                android:textColor="?GTCS_backgroundColor"
+                android:textSize="18sp"
+                app:backgroundTint="?GTCS_foregroundColor"
+                app:cornerRadius="8dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
